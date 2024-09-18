@@ -42,7 +42,7 @@
 
 .menu .navbar ul li a {
     font-family: "Bebas Neue", cursive;
-    font-size: 30px;
+    font-size: 35px;
     padding: 20px;
     color: #030303;
     display: block;
@@ -332,7 +332,7 @@ form {
 
 .input-box input::placeholder,
 .input-box textarea::placeholder {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat";
     font-size: 18px;
     inline-size: 12px;
     color:#a3a3a3;
