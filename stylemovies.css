@@ -9,9 +9,9 @@
 }
 
 body {
-    background-color: #030303;
+    background-color: #ffffff;
     font-family: "Bebas Neue", cursive;
-    color: #FFFFFF;
+    color: #161616;
 }
 
 .container {
@@ -123,7 +123,7 @@ h2 {
 }
 
 hr {
-    border: 1px solid #FF2F28;
+    border: 3px solid #FF2F28;
     width: 50%;
     margin-bottom: 40px;
 }
@@ -172,7 +172,7 @@ hr {
     border-radius: 15px;
     border: 1px solid #FF2F28;
     color: #FF2F28;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
     align-self: flex-end;
 }
@@ -193,7 +193,8 @@ hr {
 }
 
 .content {
-    color: #CFCFCF;
+    color: #161616;
+    text-transform: lowercase;
     font-size: 20px;
 }
 
@@ -206,7 +207,7 @@ hr {
     justify-content: space-between;
     padding: 100px 0;
     margin-top: 100px;
-    border-top: 2px solid #FF2F283D;
+    border-top: 5px solid #FF2F283D;
 }
 
 .footer ul {
@@ -218,7 +219,7 @@ hr {
 }
 
 .footer a {
-    color: #FFFFFF;
+    color: #2c2929;
     font-size: 30px;
     margin-right: 20px;
     display: block;

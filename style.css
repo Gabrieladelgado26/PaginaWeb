@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/inicio.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    padding-top: 10px;
+    position: relative;
+    float: left
+}
+
+.menu .navbar ul li a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    padding: 20px;
+    color: #030303;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #FF2F28;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 40px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    font-family: "Bebas Neue", cursive;
+    padding-top: 150px;
+    justify-content: end;
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-1 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.btn-1 {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 1px;
+    padding: 7px 20px;
+    background-color: #FF2F28;
+    font-size: 35px;
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+    background-color: #FF2F2890;
+    border: 2px solid #FF2F28;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content {
+    color: #CFCFCF;
+    font-size: 20px;
+}
+
+.content p {
+    font-size: 22px;
+}
+
+.intro {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    font-family: "Bebas Neue", cursive;
+    width: 180px;
+    text-align: center;
+    background-color: #FF2F28;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 150px 100px 100px;
+    background-color: #bcbdc1;
+}
+
+.general-2 {
+    background-image: url(images/mision.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(images/vision.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 70px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 22px;
+    color: #414247;
+}
+
+.footer {
+    font-family: "Montserrat";
+    text-align: center;
+    background-color: #000000;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 18px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact {
+    background-color: #ccccd2;
+    padding: 300px 0;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.contact-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.btn-2 {
+    font-family: "Bebas Neue", cursive;
+    padding: 12px;
+    text-align: center;
+    background-color: #FF2F28;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.contact {
+    position: relative;
+    height: 100vh;
+    background-image: url(images/img-contact.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-text h1 {
+
+}
