@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
@@ -224,50 +224,175 @@ link h3 {
     margin-bottom: 15px;
 }
 
-.contact {
-    background-color: #ccccd2;
-    padding: 300px 0;
-}
 
-.contact-content {
-    text-align: center;
-}
-
-.contact-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.contact-content p {
-    font-size: 16px;
-    color: #c5c5c5;
-    margin-bottom: 50px;
-    padding: 0 100px;
-}
-
-.btn-2 {
-    font-family: "Bebas Neue", cursive;
-    padding: 12px;
-    text-align: center;
-    background-color: #FF2F28;
-    font-size: 32px;
-    color: #FFFFFF;
-}
-
-.contact {
-    position: relative;
-    height: 100vh;
-    background-image: url(images/img-contact.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
+.body-contact {
+    font-family: "Monserrat", sans-serif;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    background-image: linear-gradient(rgba(43, 40, 40, 0.8),rgba(47, 45, 45, 0.8)),url(images/contact.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.contact-text h1 {
+.menu .navbarC ul li a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 35px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
 
+.container-contact {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding: auto;
+    gap:100px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info h1 {
+    font-family: "Bebas Neue", cursive;
+    text-align: left;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+.box-info hr {
+    border-color: #FF2F28;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data p {
+    font-size: 18px;
+    color: #e1e2e6;
+}
+
+.data p i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s;
+}
+
+.links a i {
+    color:#fff;
+    line-height: 40px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    font-size: 18px;
+    
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    inline-size: 12px;
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-bottom:3px solid crimson;
+    animation: shake .2s;
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    font-size: 18px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+.input-box i {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box input:focus ~ i {
+    color:crimson;
+}
+
+form button {
+    font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+    padding: 15px;
+    font-size: 20px;
 }

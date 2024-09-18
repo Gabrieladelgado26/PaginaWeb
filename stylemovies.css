@@ -188,8 +188,9 @@ hr {
 }
 
 .content h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .content {
@@ -199,6 +200,9 @@ hr {
 }
 
 .content p {
+    font-family: "Monserrat", sans-serif;
+    text-transform: initial;
+    text-align: center;
     font-size: 22px;
 }
 
