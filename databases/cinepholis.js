@@ -1,7 +1,4 @@
-
 //Nombres: Karoll Gabriela Delgado Charfuelan - Ana Cristina Mera Rodríguez
-
-
 
 //DESCRIPCIÓN CASO DE ESTUDIO: El caso de estudio hace referencia a la base de datos que maneja un cine, administrando una variedad de colecciones que contienen información, 
 //entre las colecciones se encuentran las películas, los productos, los clientes, los empleados y las funciones, cada una de ellas almacena datos recurrentes y estructurados,
