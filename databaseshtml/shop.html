@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bases</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styledatabase.css">
+</head>
+<body>
+    <header class="header-cars">
+        <div class="menu container">
+            <nav class="navbar-shop">
+                <ul>
+                    <li style="margin-left: 280px;"><a href="../databases.html">Databases</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="specialdish.html">SpecialDish</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-cars-content container">
+            <div class="header-cars-txt">
+                <h1 style="margin-top: 20px;">Conoce todo sobre la base de datos <br> database shop</h1>
+                <p>
+                    En esta página podra encontrar seis diferentes bases de datos con la explicación de cada una de
+                    ellas, utilizando imagenes y presentando el análisis de operaciones con los datos de las bases de
+                    datos.
+                </p>
+                <a href="" class="btn-shop">Sección menu</a>
+            </div>
+            <div class="header-cars-img">
+                <img src="../images/screendb/shop/shopbg.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="../images/screendb/shop/shopabout.webp" alt="">
+            <img src="../images/screendb/shop/shopabout2.jpeg" alt="">
+        </div>
+
+        <div class="about-txt">
+            <h2>Cuarenta productos con <span class="spancshop">todos</span> sus datos</h2>
+            <p>
+                En esta página encontraras datos de cuarenta productos de la tienda D1 con diez propiedades, las cuales corresponden a sus llaves, estas son, nombre, ubicación, clasificación, descripción, capacidad de personas por habitación, área del hotel, tarifa promedio, número de pisos, tamaño de habitaciones e ingresos mensuales.
+            </p>
+            <a href="" class="btn-3">Información</a>
+        </div>
+    </section>
+
+    <section class="intro"></section>
+        <div class="intro-content container">
+            <h2 style="color: #FF2F28;">Operadores lógicos & de</h2>
+            <h2 style="margin-bottom: 60px;">comparación</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="operaciones-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Primera operación <br><span class="spancshop">igual que</span></h2>
+                                <p>
+                                    La primera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({nombreProducto:{$eq:'PIZZA'}})
+                                </p>
+                                <p>
+                                    En donde se utiliza el operador $eq que permite buscar el producto con el nombre igual a pizza.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/first.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Segunda operación <br><span class="spancshop">mayor que</span></h2>
+                                <p>
+                                    La segunda operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({precio:{$gt:50000}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gt que permite encontrar los productos con un precio mayor a 50000 pesos.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Tercera operación <br><span class="spancshop">Mayor e igual que</span></h2>
+                                <p>
+                                    La tercera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({disponibilidadInventario:{$gte:100}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gte que permite encontrar los productos con una disponibilidad en el inventario mayor o igual a 100.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Cuarta operación <br><span class="spancshop">Menor que</span></h2>
+                                <p>
+                                    La cuarta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({numeroModelo:{$lt:2024}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lt que permite encontrar los productos cuyo número de modelo sea menor a 2023.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Quinta operación <br><span class="spancshop">Menor e igual que</span></h2>
+                                <p>
+                                    La quinta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({peso:{$lte:300}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lte que permite encontrar los productos cuyo peso sea menor o igual a 300gr.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Sexta operación <br><span class="spancshop">Diferente</span></h2>
+                                <p>
+                                    La sexta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({unidadesVendidas:{$ne:10}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $ne que permite encontrar los productos cuyas unidades vendidas sean diferentes de 10.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Septima operación <br><span class="spancshop">Valores dentro de un rango</span></h2>
+                                <p>
+                                    La septima operación corresponde a:
+                                <p style="text-align: center;">
+                                    db.shop.find({valoracionPromedio:{$in:[4.7,4.8,4.9,5.0]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $in que permite encontrar los productos cuya vaoracion promedio se encuentre entre 4.7 y 5.0 puntos.
+                                </p>
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Octava operación <br><span class="spancshop">Valores fuera de un rango</span></h2>
+                                <p>
+                                    La octava operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({categoria:{$nin:['Lácteos','Mascotas']}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $nin que permite encontrar los productos cuya categoría no sea ni Lácteos ni Mascotas.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Novena operación <br><span class="spancshop">Busqueda</span></h2>
+                                <p>
+                                    La novena operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.find({marca:'Red Flag'})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza find para buscar sólo los productos cuya marca sea Red Flag.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Decima operación <br><span class="spancshop">Actualizar</span></h2>
+                                <p>
+                                    La decima operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.shop.updateOne({nombreProducto:'PIZZA'},{$set:{precio:4990}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza updateOne y el operador $set para realizar la actualización de precio al producto PIZZA, cambiándole el precio actual (4490) a 4990.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bases</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styledatabase.css">
+</head>
+<body>
+    <header class="header-cars">
+        <div class="menu container">
+            <nav class="navbar-hotel">
+                <ul>
+                    <li style="margin-left: 280px;"><a href="../databases.html">Databases</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="specialdish.html">SpecialDish</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-cars-content container">
+            <div class="header-cars-txt">
+                <h1 style="padding: 16px; margin-top: 20px;">Conoce todo sobre la base de datos <br> database hotel</h1>
+                <p>
+                    En esta página podra encontrar seis diferentes bases de datos con la explicación de cada una de
+                    ellas, utilizando imagenes y presentando el análisis de operaciones con los datos de las bases de
+                    datos.
+                </p>
+                <a href="" class="btn-hotel">Sección menu</a>
+            </div>
+            <div class="header-hotel-img">
+                <img style="height: 500px;" src="../images/screendb/hotel/pruebabg.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="../images/b1.jpg" alt="">
+            <img src="../images/b2.jpg" alt="">
+        </div>
+
+        <div class="about-txt">
+            <h2>Cuarenta hoteles con <span>todos</span> sus datos</h2>
+            <p>
+                En esta página encontraras datos de cuarenta hoteles con diez propiedades, las cuales corresponden a sus llaves, estas son, nombre, ubicación, clasificación, descripción, capacidad de personas por habitación, área del hotel, tarifa promedio, número de pisos, tamaño de habitaciones e ingresos mensuales.
+            </p>
+            <a href="" class="btn-2">Información</a>
+        </div>
+    </section>
+
+    <section class="intro"></section>
+        <div class="intro-content container">
+            <h2 style="color: #2EA1FF;">Operadores lógicos & de</h2>
+            <h2 style="margin-bottom: 60px;">comparación</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="operaciones-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Primera operación <br><span>igual que</span></h2>
+                                <p>
+                                    La primera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({nombreHotel:{$eq:'Capella Bangkok'}}) 
+                                </p>
+                                <p>
+                                    En donde se utiliza el operador $eq que permite buscar un hotel en la base de datos si el nombre es igual a Capella Bangkok.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img contenedor-imagen">
+                                <img src="../images/screendb/hotel/first.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Segunda operación <br><span>mayor que</span></h2>
+                                <p>
+                                    La segunda operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({clasificacion:{$gt:5}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gt que permite encontrar los hoteles que tengan una clasificación mayor a 5 estrellas.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Tercera operación <br><span>Mayor e igual que</span></h2>
+                                <p>
+                                    La tercera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({tarifaPromedio:{$gte:1500}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gte que permite encontrar los hoteles que tengan una tarifa promedio por estadia mayor o igual a 1500.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Cuarta operación <br><span>Menor que</span></h2>
+                                <p>
+                                    La cuarta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({areaHotel:{$lt:20000}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lt que permite encontrar los hoteles que tengan un área total menor a 20000 metros cuadrados.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Quinta operación <br><span>Menor e igual que</span></h2>
+                                <p>
+                                    La quinta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({capacidadPersonas:{$lte:2}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lte que permite encontrar los hoteles en los que la capacidad de personas sea menor o igual a 2.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Sexta operación <br><span>Diferente</span></h2>
+                                <p>
+                                    La sexta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({ubicacion:{$ne:'Whitehall, London SW1A 2EU, Reino Unido'}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $ne que permite encontrar los hoteles que tengan una ubicación diferente a la especificada en el código.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Septima operación <br><span>Valores dentro de un rango</span></h2>
+                                <p>
+                                    La septima operación corresponde a:
+                                <p style="text-align: center;">
+                                    db.hotel.find({ingresosMensuales:{$in:[5000000,6000000,7000000]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $in que permite encontrar los hoteles que tengan ingresos entre 5, 6 y 7 millones.
+                                </p>
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Octava operación <br><span>Valores fuera de un rango</span></h2>
+                                <p>
+                                    La octava operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({numeroPisos:{$nin:[1,2,3,4,5]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $nin que permite encontrar los hoteles tengan seis o más pisos.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Novena operación <br><span>Busqueda</span></h2>
+                                <p>
+                                    La novena operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.find({tamañoHabitaciones:'50 m²'})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza find para buscar los hoteles en los que el tamaño de habitación sea igual a 50 metros cuadrados.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Decima operación <br><span>Eliminar</span></h2>
+                                <p>
+                                    La decima operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.hotel.deleteOne({nombreHotel:{$eq:'Eden Rock'}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza deleteOne y el operador $eq para eliminar el hotel con el nombre especificado en el código.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderhotel">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bases</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styledatabase.css">
+</head>
+
+<body>
+    <header class="header-cars">
+        <div class="menu container">
+            <nav class="navbar-dish">
+                <ul>
+                    <li style="margin-left: 280px;"><a href="../databases.html">Databases</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-cars-content container">
+            <div class="header-cars-txt">
+                <h1>Conoce sobre la base de datos <br> database specialdish</h1>
+                <p>
+                    En esta página podra encontrar seis diferentes bases de datos con la explicación de cada una de
+                    ellas, utilizando imagenes y presentando el análisis de operaciones con los datos de las bases de
+                    datos.
+                </p>
+                <a href="" class="btn-dish">Sección menu</a>
+            </div>
+            <div class="header-cars-img">
+                <img src="../images/screendb/dishes/dishbg.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="../images/screendb/dishes/dishabout.jpeg" alt="">
+            <img src="../images/screendb/dishes/dishabout2.jpeg" alt="">
+        </div>
+
+        <div class="about-txt">
+            <h2>Cuarenta platos con <span class="spancdish">todas</span> sus especies</h2>
+            <p>
+                En esta página encontraras datos de cuarenta carros con diez propiedades, las cuales corresponden a sus llaves, estas son, nombre del plato, descripción, precio, categoría, tiempo de preparación, calorías, ingredientes principales, nivel de picante, disponibilidad y popularidad.
+            </p>
+            <a href="" class="btn-5">Información</a>
+        </div>
+    </section>
+
+    <section class="intro"></section>
+        <div class="intro-content container">
+            <h2 style="color: #0ca51e;">Operadores lógicos & de</h2>
+            <h2 style="margin-bottom: 60px;">comparación</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="operaciones-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Primera operación <br><span class="spancdish">igual que</span></h2>
+                                <p>
+                                    La primera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({nombrePlato:{$eq:'Sopa de cebollas'}})
+                                </p>
+                                <p>
+                                    En donde se utiliza el operador $eq que permite buscar el platillo que sea igual a Sopa de cebollas.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img contenedor-imagen">
+                                <img src="../images/screendb/hotel/first.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Segunda operación <br><span class="spancdish">mayor que</span></h2>
+                                <p>
+                                    La segunda operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({precio:{$gt:50},categoria:'Carne'})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gt que permite encontrar los platillos cuyo precio sea mayor a 50 y su categoria sea Carne.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Tercera operación <br><span class="spancdish">Mayor e igual que</span></h2>
+                                <p>
+                                    La tercera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({tiempoPreparacion:{$gte:60}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gte que permite encontrar los platillos cuyo tiempo de preparación sea mayor o igual que 60.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Cuarta operación <br><span class="spancdish">Menor que</span></h2>
+                                <p>
+                                    La cuarta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({disponibilidad:{$lt:30}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lt que permite encontrar los platillos cuya disponibilidad sea menor a 30 platos.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Quinta operación <br><span class="spancdish">Menor e igual que</span></h2>
+                                <p>
+                                    La quinta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({popularidad:{$lte:90}}) 
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lte que permite encontrar los platillos cuya popularidad sea menor o igual que 90.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Sexta operación <br><span class="spancdish">Diferente</span></h2>
+                                <p>
+                                    La sexta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({nivelPicante:{$ne:'No picante'}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $ne que permite encontrar los platillos cuyo nivel de picante sea diferente de No picante.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Septima operación <br><span class="spancdish">Valores dentro de un rango</span></h2>
+                                <p>
+                                    La septima operación corresponde a:
+                                <p style="text-align: center;">
+                                    db.specialdish.find({calorias:{$in:[300,400,500]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $in que permite encontrar los platillos que esten entre 300,400 o 500 calorias.
+                                </p>
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Octava operación <br><span class="spancdish">Valores fuera de un rango</span></h2>
+                                <p>
+                                    La octava operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({categoria:{$nin:['Pescado','Carne','Marisco']}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $nin que permite encontrar los platillos que no sean de las categorías Pescado, Carne ni Marisco.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Novena operación <br><span class="spancdish">Busqueda</span></h2>
+                                <p>
+                                    La novena operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.find({precio:{$gte:60},categoria:'Arroz'})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza find para buscar los platillos cuyo precio sea mayor o igual a 60 y esté en la categoría de Arroz.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Decima operación <br><span class="spancdish">Actualizar</span></h2>
+                                <p>
+                                    La decima operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.specialdish.updateOne({nombrePlato:'Tortilla de patatas'},{$set:{precio:28,disponibilidad:20}})
+                                </p>
+                                <p>
+                                    Para esta actualización se ha hecho uso del operador $set, ya que este es el que permite realizar las modificaciones de los campos que se le especifique, en este caso en el platillo Tortilla de patatas se actualizará el precio con el nuevo valor que es 28 y también el campo de disponibilidad con el valor 20.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/hotel/second.jpeg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

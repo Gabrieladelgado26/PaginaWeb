@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Bases</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styledatabase.css">
+</head>
+
+<body>
+    <header class="header-cars">
+        <div class="menu container">
+            <nav class="navbar-cars">
+                <ul>
+                    <li style="margin-left: 280px;"><a href="../databases.html">Databases</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="specialdish.html">SpecialDish</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-cars-content container">
+            <div class="header-cars-txt">
+                <h1>Conoce todo sobre la base de datos <br> database cars</h1>
+                <p>
+                    En esta página podra encontrar seis diferentes bases de datos con la explicación de cada una de
+                    ellas, utilizando imagenes y presentando el análisis de operaciones con los datos de las bases de
+                    datos.
+                </p>
+                <a href="" class="btn-cars">Sección menu</a>
+            </div>
+            <div class="header-cars-img">
+                <img src="../images/right.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="../images/carros1about.webp" alt="">
+            <img src="../images/carros2about.jpeg" alt="">
+        </div>
+
+        <div class="about-txt">
+            <h2>Cuarenta productos con <span class="spancars">todos</span> sus datos</h2>
+            <p>
+                En esta página encontraras datos de cuarenta productos con diez propiedades, las cuales corresponden a
+                sus llaves, estas son, nombre del producto, descripción, precio, categoría, disponibilidad en
+                inventario, marca, número de modelo, peso, unidades vendidas y valoración promedio.
+            </p>
+            <a href="" class="btncars-2">Información</a>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="intro-content container">
+            <h2 style="color: #FF8400;">Operadores lógicos & de</h2>
+            <h2 style="margin-bottom: 60px;">comparación</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="operaciones-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Primera operación <br><span class="spancars">igual que</span></h2>
+                                <p>
+                                    La primera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({color:{$eq:'Blanco'}})
+                                </p>
+                                <p>
+                                    En donde se utiliza el operador $eq que permite buscar los carros que sólo tengan
+                                    color Blanco.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <div class="contenedor-imagen">
+                                    <img class="image-scroll" height="1500%" src="../images/screendb/cars/firstImage.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Segunda operación <br><span class="spancars">Mayor que</span></h2>
+                                <p>
+                                    La segunda operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({añoFabricacion:{$gt:2000}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gt que permite encontrar los carros cuyo
+                                    año de fabricación sea mayor a los 2000.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/dos.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Tercera operación <br><span class="spancars">Mayor e igual que</span></h2>
+                                <p>
+                                    La tercera operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({precio:{$gte:200000000}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $gte que permite encontrar los carros cuyo
+                                    precio sea mayor o igual a 200.000.000.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/tres.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Cuarta operación <br><span class="spancars">Menor que</span></h2>
+                                <p>
+                                    La cuarta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({capacidadPasajeros:{$lt:5}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lt que permite encontrar los carros que
+                                    tengan una capacidad de pasajeros menor a 5.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/cuatro.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Quinta operación <br><span class="spancars">Menor e igual que</span></h2>
+                                <p>
+                                    La quinta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({potenciaMotor:{$lte:200}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $lte que permite encontrar los carros que
+                                    tengan una potencia de motor menor o igual que 200.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/cinco.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Sexta operación <br><span class="spancars">Diferente</span></h2>
+                                <p>
+                                    La sexta operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    //db.cars.find({marca:{$ne:"Toyota"}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $ne que permite encontrar los carros que
+                                    sean diferente de la marca Toyota.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/seis.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Septima operación <br><span class="spancars">Valores dentro de un rango</span></h2>
+                                <p>
+                                    La septima operación corresponde a:
+                                <p style="text-align: center;">
+                                    db.cars.find({marca:{$in:["Honda","Toyota","Nissan"]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $in que permite encontrar los carros que
+                                    tengan como marca a HONDA,TOYOTA O NISSAN.
+                                </p>
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/siete.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Octava operación <br><span class="spancars">Valores fuera de un rango</span></h2>
+                                <p>
+                                    La octava operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({color:{$nin:["Blanco","Negro","Gris"]}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza el operador $nin que permite encontrar los carros que
+                                    no sean de color Blanco, Negro o Gris.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/ocho.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Novena operación <br><span class="spancars">Busqueda</span></h2>
+                                <p>
+                                    La novena operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.find({marca:"Ford", añoFabricacion:{$gte:2020}})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza find para buscar los carros que sean de la marca Ford y
+                                    su año de fabricación sea mayor o igual al 2020.
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/nueve.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h2>Decima operación <br><span class="spancars">Eliminar</span></h2>
+                                <p>
+                                    La decima operación corresponde a:
+                                </p>
+                                <p style="text-align: center;">
+                                    db.cars.deleteOne({modelo:"Jetta Turbo 2"})
+                                </p>
+                                <p>
+                                    En esta operación se utiliza deleteOne y el operador $eq para eliminar el carro
+                                    haciendo uso del modelo.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-slidercars">Ver más</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="../images/screendb/cars/diez.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
