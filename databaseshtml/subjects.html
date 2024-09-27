@@ -28,7 +28,7 @@
                 <p>
                   En esta página podrá encontrar la base de datos llamada database subjects en la cual se realizan operaciones y su explicación esta acompañada del resultado al ejecutar el código.
                 </p>
-                <a href="" class="btn-subjects">Sección menu</a>
+                <a href="#info" class="btn-subjects">Información</a>
             </div>
             <div class="header-cars-img">
                 <img src="../images/screendb/subjects/subjectsbg.png" alt="">
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <section class="about container">
+    <section class="about container" id="info">
         <div class="about-img">
             <img src="../images/screendb/subjects/subjectabout.jpeg" alt="">
             <img src="../images/screendb/subjects/aboutsub2.jpeg" alt="">
@@ -48,11 +48,11 @@
                 En esta página encontraras datos de cuarenta materias con diez propiedades, las cuales corresponden a sus
                 llaves, estas son, nombre de la materia, código de la materia, descripción, créditos, horas de clases teóricas, horas de clases prácticas, profesor(es) responsable(s), aula(s) asignada(s), prerrequisitos y prromedio de calificaciones.
             </p>
-            <a href="" class="btn-4">Información</a>
+            <a href="#database" class="btn-4">Base de datos</a>
         </div>
     </section>
 
-    <section class="intro">
+    <section class="intro" id="database">
       <div class="intro-content container">
           <h2 style="color: #0600bd;">Base de datos</h2>
           <h2 style="margin-bottom: 60px;">subjects</h2>
@@ -106,10 +106,10 @@ db.subjects.insertMany([
       </div>
     </section>
 
-    <section style="margin-top: 40px;" class="intro">
+    <section style="margin-top: 50px;" class="intro">
         <div class="intro-content container">
             <h2 style="color: #0600bd;">Operadores lógicos & de</h2>
-            <h2 style="margin-bottom: 40px;">comparación</h2>
+            <h2 style="margin-bottom: 30px;">comparación</h2>
         </div>
     </section>
 
@@ -131,7 +131,7 @@ db.subjects.insertMany([
                                     En donde se utiliza el operador $eq que permite buscar la materia de Algoritmos Y Programación III.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -171,7 +171,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $gt que permite encontrar las materias que tengan más de 2 créditos.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -367,7 +367,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $gte que permite encontrar las materias cuyas horas teóricas sean mayores o iguales que 30.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -654,7 +654,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $lt que permite encontrar las materias cuyas horas practicas sean menores a 40.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -941,7 +941,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $lte que permite encontrar las materias cuyo código sea menor o igual que 84020.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1163,7 +1163,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $ne que permite encontrar las materias cuyo profesor responsable sea diferente a ella.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1450,7 +1450,7 @@ db.subjects.insertMany([
                                 </p>
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1581,7 +1581,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza el operador $nin que permite encontrar las materias que no tengan ni 1 ni 3 creditos.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1842,7 +1842,7 @@ db.subjects.insertMany([
                                     En esta operación se utiliza find para buscar las materias cuyo profesor responsable sea el profesor Giovanni Hernández.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1896,7 +1896,7 @@ db.subjects.insertMany([
                                     el nombre especificado en el código.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slider">Ver más</a>
+                                  <a href="../databases/DBsubjects.js" class="btn-slider" download="DBsubjects.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">

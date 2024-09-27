@@ -28,7 +28,7 @@
                 <p>
                   En esta página podrá encontrar la base de datos llamada database specialdish en la cual se realizan operaciones y su explicación esta acompañada del resultado al ejecutar el código.
                 </p>
-                <a href="" class="btn-dish">Sección menu</a>
+                <a href="#info" class="btn-dish">Información</a>
             </div>
             <div class="header-cars-img">
                 <img src="../images/screendb/dishes/dishbg.png" alt="">
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <section class="about container">
+    <section class="about container" id="info">
         <div class="about-img">
             <img src="../images/screendb/dishes/dishabout.jpeg" alt="">
             <img src="../images/screendb/dishes/dishabout2.jpeg" alt="">
@@ -47,11 +47,11 @@
             <p>
                 En esta página encontraras datos de cuarenta platos del restaurante Celler de Can Roca con diez propiedades, las cuales corresponden a sus llaves, estas son, nombre del plato, descripción, precio, categoría, tiempo de preparación, calorías, ingredientes principales, nivel de picante, disponibilidad y popularidad.
             </p>
-            <a href="" class="btn-5">Información</a>
+            <a href="#database" class="btn-5">Base de datos</a>
         </div>
     </section>
 
-    <section class="intro"></section>
+    <section class="intro" id="database">
       <div class="intro-content container">
           <h2 style="color: #0ca51e;">Base de datos</h2>
           <h2 style="margin-bottom: 60px;">specialdish</h2>
@@ -105,10 +105,10 @@ db.specialdish.insertMany([
       </div>
     </section>
 
-    <section style="margin-top: 40px;" class="intro">
+    <section style="margin-top: 50px;" class="intro">
         <div class="intro-content container">
             <h2 style="color: #0ca51e;">Operadores lógicos & de</h2>
-            <h2 style="margin-bottom: 40px;">comparación</h2>
+            <h2 style="margin-bottom: 30px;">comparación</h2>
         </div>
     </section>
 
@@ -130,7 +130,7 @@ db.specialdish.insertMany([
                                     En donde se utiliza el operador $eq que permite buscar el platillo que sea igual a Sopa de cebollas.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img contenedor-imagen">
@@ -170,7 +170,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $gt que permite encontrar los platillos cuyo precio sea mayor a 50 y su categoria sea Carne.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -236,7 +236,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $gte que permite encontrar los platillos cuyo tiempo de preparación sea mayor o igual que 60 minutos.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -328,7 +328,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $lt que permite encontrar los platillos cuya disponibilidad sea menor a 30 platos.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -511,7 +511,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $lte que permite encontrar los platillos cuya popularidad sea menor o igual que 90.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -759,7 +759,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $ne que permite encontrar los platillos cuyo nivel de picante sea diferente de No picante.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -877,7 +877,7 @@ db.specialdish.insertMany([
                                 </p>
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1008,7 +1008,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza el operador $nin que permite encontrar los platillos que no sean de las categorías Pescado, Carne ni Marisco.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1295,7 +1295,7 @@ db.specialdish.insertMany([
                                     En esta operación se utiliza find para buscar los platillos cuyo precio sea mayor o igual a 60 dolares y esté en la categoría de Arroz.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1348,7 +1348,7 @@ db.specialdish.insertMany([
                                     Para esta actualización se uso del operador $set que permite realizar las modificaciones, en este caso en el platillo Tortilla de patatas se actualizará el precio con el nuevo valor que es 28 y también el campo de disponibilidad con el valor 20.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-sliderdish">Ver más</a>
+                                  <a href="../databases/DBspecialdish.js" class="btn-sliderdish" download="DBspecialdish.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">

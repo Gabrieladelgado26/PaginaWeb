@@ -26,7 +26,7 @@
                 <p>
                   En esta página podra encontrar la base de datos llamada database shop en la cual se realizan operaciones y su explicación esta acompañada del resultado al ejecutar el código.
                 </p>
-                <a href="" class="btn-shop">Sección menu</a>
+                <a href="#info" class="btn-shop">Información</a>
             </div>
             <div class="header-cars-img">
                 <img src="../images/screendb/shop/shopbg.png" alt="">
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <section class="about container">
+    <section class="about container" id="info">
         <div class="about-img">
             <img src="../images/screendb/shop/shopabout.webp" alt="">
             <img src="../images/screendb/shop/shopabout2.jpeg" alt="">
@@ -47,11 +47,11 @@
                 sus llaves, estas son, nombre del producto, descripción, precio, categoría, disponibilidad en
                 inventario, marca, número de modelo, peso, unidades vendidas y valoración promedio.
             </p>
-            <a href="" class="btn-3">Información</a>
+            <a href="#database" class="btn-3">Base de datos</a>
         </div>
     </section>
 
-    <section class="intro">
+    <section class="intro" id="database">
       <div class="intro-content container">
           <h2 style="color: #FF2F28;">Base de datos</h2>
           <h2 style="margin-bottom: 60px;">shop</h2>
@@ -106,10 +106,10 @@ db.shop.insertMany([
       </div>
   </section>
 
-    <section style="margin-top: 40px;" class="intro">
+    <section style="margin-top: 50px;" class="intro">
         <div class="intro-content container">
             <h2 style="color: #FF2F28;">Operadores lógicos & de</h2>
-            <h2 style="margin-bottom: 60px;">comparación</h2>
+            <h2 style="margin-bottom: 30px;">comparación</h2>
         </div>
     </section>
 
@@ -131,7 +131,7 @@ db.shop.insertMany([
                                     En donde se utiliza el operador $eq que permite buscar el producto con el nombre igual a pizza.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -171,7 +171,7 @@ db.shop.insertMany([
                                     En esta operación se utiliza el operador $gt que permite encontrar los productos con un precio mayor a 50000 pesos.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -224,7 +224,7 @@ db.shop.insertMany([
                                     En esta operación se utiliza el operador $gte que permite encontrar los productos con una disponibilidad en el inventario mayor o igual a 100.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -381,7 +381,7 @@ db.shop.insertMany([
                                     En esta operación se utiliza el operador $lt que permite encontrar los productos cuyo número de modelo sea menor a 2023.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -486,7 +486,7 @@ mycompiler_mongodb> [
                                     En esta operación se utiliza el operador $lte que permite encontrar los productos cuyo peso sea menor o igual a 300gr.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -760,7 +760,7 @@ mycompiler_mongodb> [
                                     En esta operación se utiliza el operador $ne que permite encontrar los productos cuyas unidades vendidas sean diferentes de 10.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1047,7 +1047,7 @@ mycompiler_mongodb> [
                                 </p>
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1178,7 +1178,7 @@ mycompiler_mongodb> [
                                     En esta operación se utiliza el operador $nin que permite encontrar los productos cuya categoría no sea ni Lácteos ni Mascotas.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1465,7 +1465,7 @@ mycompiler_mongodb> [
                                     En esta operación se utiliza find para buscar sólo los productos cuya marca sea Red Flag.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
@@ -1531,7 +1531,7 @@ mycompiler_mongodb> [
                                     En esta operación se utiliza updateOne y el operador $set para realizar la actualización de precio al producto PIZZA, cambiándole el precio actual (4490) a 4990.
                                 </p>
                                 <div class="botones">
-                                    <a href="#" class="btn-slidershop">Ver más</a>
+                                  <a href="../databases/DBshop.js" class="btn-slidershop" download="DBshop.js">Descargar</a>
                                 </div>
                             </div>
                             <div class="slider-img">
