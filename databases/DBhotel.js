@@ -8,7 +8,7 @@ db.hotel.insertMany([
   {nombreHotel: 'Cheval Blanc', ubicacion: '8 Quai du Point du Jour, 92100 Boulogne-Billancourt, Francia', clasificacion: 5, descripcion: 'Hotel boutique de ultra lujo en París con diseño contemporáneo, spa Dior y vistas al Sena.', capacidadPersonas: 3, areaHotel: 15000, tarifaPromedio: 2500, numeroPisos: 7, tamañoHabitaciones: '70 m²', ingresosMensuales: 6000000},
   {nombreHotel: 'The Upper House', ubicacion: 'Pacific Place, 88 Queensway, Admiralty, Hong Kong', clasificacion: 5, descripcion: 'Hotel de diseño contemporáneo con amplias habitaciones, vistas panorámicas de la ciudad y servicio personalizado.', capacidadPersonas: 3, areaHotel: 20000, tarifaPromedio: 1200, numeroPisos: 49, tamañoHabitaciones: '68 m²', ingresosMensuales: 5500000},
   {nombreHotel: 'Raffles Singapore', ubicacion: '1 Beach Road, 189673, Singapur', clasificacion: 5, descripcion: 'Hotel histórico icónico de Singapur, recientemente renovado, famoso por su arquitectura colonial y el cóctel Singapore Sling.', capacidadPersonas: 3, areaHotel: 40000, tarifaPromedio: 1300, numeroPisos: 3, tamañoHabitaciones: '60 m²', ingresosMensuales: 7000000},
-  {nombreHotel: 'Aman Tokyo', ubicacion: 'The Otemachi Tower, 1-5-6 Otemachi, Chidoya-ku, Tokyo 100-0004, Japón', clasificacion: 5, descripcion: 'Hotel de lujo minimalista en lo alto de un rascacielos con spa, vistas panorámicas de Tokio y diseño zen.', capacidadPersonas: 3, areaHotel: 25000, tarifaPromedio: 1600, numeroPisos: 6, tamañoHabitaciones: '71 m²', ingresosMensuales: 6500000},
+  {nombreHotel: 'Aman Tokyo', ubicacion: 'The Otemachi Tower, 1-5-6 Otemachi, Chidoya-ku, Tokyo 100-0004', clasificacion: 5, descripcion: 'Hotel de lujo minimalista en lo alto de un rascacielos con spa, vistas panorámicas de Tokio y diseño zen.', capacidadPersonas: 3, areaHotel: 25000, tarifaPromedio: 1600, numeroPisos: 6, tamañoHabitaciones: '71 m²', ingresosMensuales: 6500000},
   {nombreHotel: 'Soneva Fushi', ubicacion: 'Kunfunadhoo Island, Baa Atoll, Maldivas', clasificacion: 5, descripcion: 'Resort de lujo ecológico en una isla privada con villas en la playa, experiencias únicas y compromiso con la sostenibilidad.', capacidadPersonas: 6, areaHotel: 100000, tarifaPromedio: 3000, numeroPisos: 1, tamañoHabitaciones: '250 m²', ingresosMensuales: 8000000},
   {nombreHotel: 'Atlantis The Royal', ubicacion: 'Crescent Road, Palm Jumeirah, Dubai, Emiratos Árabes Unidos', clasificacion: 5, descripcion: 'Resort ultra lujoso en Dubai con arquitectura futurista, fuentes espectaculares y experiencias gastronómicas de clase mundial.', capacidadPersonas: 4, areaHotel: 170000, tarifaPromedio: 2000, numeroPisos: 43, tamañoHabitaciones: '75 m²', ingresosMensuales: 15000000},
   {nombreHotel: 'Nihi Sumba', ubicacion: 'Hoba Wawi, Wanokaka, Sumba Barat, East Nusa Tenggara, Indonesia', clasificacion: 5, descripcion: 'Resort exclusivo en una isla remota de Indonesia, conocido por sus playas vírgenes y experiencias de aventura de lujo.', capacidadPersonas: 4, areaHotel: 200000, tarifaPromedio: 1800, numeroPisos: 1, tamañoHabitaciones: '200 m²', ingresosMensuales: 4000000},
@@ -23,12 +23,12 @@ db.hotel.insertMany([
   {nombreHotel: 'Four Seasons Firenze', ubicacion: 'Borgo Pinti, 99, 50121 Firenze FI, Italia', clasificacion: 5, descripcion: 'Palacio renacentista convertido en hotel de lujo, que ofrece una experiencia única en el corazón de Florencia.', capacidadPersonas: 3, areaHotel: 45000, tarifaPromedio: 1800, numeroPisos: 4, tamañoHabitaciones: '55 m²', ingresosMensuales: 6000000},
   {nombreHotel: 'Borgo Santandrea', ubicacion: 'Via Giovanni Augustariccio, 33, 84011 Amalfi SA, Italia', clasificacion: 5, descripcion: 'Hotel boutique de lujo en la costa de Amalfi, que combina el diseño moderno con las vistas al Mar Mediterráneo.', capacidadPersonas: 2, areaHotel: 20000, tarifaPromedio: 2200, numeroPisos: 6, tamañoHabitaciones: '45 m²', ingresosMensuales: 4500000},
   {nombreHotel: 'Desa Potato Head', ubicacion: 'Jl. Petitenget No.51B, Seminyak, Kec. Kuta Utara, Bali, Indonesia', clasificacion: 5, descripcion: 'Resort creativo y sostenible en Bali, que ofrece una experiencia única de arte, música y gastronnomía.', capacidadPersonas: 3, areaHotel: 70000, tarifaPromedio: 1100, numeroPisos: 5, tamañoHabitaciones: '50 m²', ingresosMensuales: 4000000},
-  {nombreHotel: 'Bulgari Tokyo', ubicacion: '2-2-1 Yaesu, Chuo City, Tokyo 104-0028, Japón', clasificacion: 5, descripcion: 'Hotel de lujo contemporáneo en el corazón de Tokio, que refleja la elegancia de la marca Bulgari.', capacidadPersonas: 3, areaHotel: 35000, tarifaPromedio: 2000, numeroPisos: 45, tamañoHabitaciones: '60 m²', ingresosMensuales: 8000000},
+  {nombreHotel: 'Bulgari Tokyo', ubicacion: '2-2-1 Yaesu, Chuo City, Tokyo 104-0028', clasificacion: 5, descripcion: 'Hotel de lujo contemporáneo en el corazón de Tokio, que refleja la elegancia de la marca Bulgari.', capacidadPersonas: 3, areaHotel: 35000, tarifaPromedio: 2000, numeroPisos: 45, tamañoHabitaciones: '60 m²', ingresosMensuales: 8000000},
   {nombreHotel: 'The Lana', ubicacion: 'Marasi Drive, Business Bay, Dubai, Emiratos Árabes Unidos', clasificacion: 5, descripcion: 'Hotel de diseño vanguardista en Dubai, que ofrece vistas panorámicas y experiencias de lujo únicas.', capacidadPersonas: 3, areaHotel: 55000, tarifaPromedio: 1700, numeroPisos: 30, tamañoHabitaciones: '65 m²', ingresosMensuales: 7000000},
   {nombreHotel: 'Rosewood São Paulo', ubicacion: 'Rua Itapeva, 435-Bela Vista, Sao Paulo-SP, 01332-000, Brasil', clasificacion: 5, descripcion: 'Hotel de lujo en un rascacielos histórico de Sao Pulo, que combina el arte brasileño con la sofisticación contemporánea.', capacidadPersonas: 3, areaHotel: 40000, tarifaPromedio: 1400, numeroPisos: 22, tamañoHabitaciones: '58 m²', ingresosMensuales: 5800000},
   {nombreHotel: 'The Calile', ubicacion: '48 James St, Fortitude Valley QLD 4006, Australia', clasificacion: 5, descripcion: 'Hotel urbano de diseño en Brisbane, que ofrece una experiencia de lujo relajada con influencias mediterráneas.', capacidadPersonas: 2, areaHotel: 25000, tarifaPromedio: 450, numeroPisos: 7, tamañoHabitaciones: '45 m²', ingresosMensuales: 3200000},
   {nombreHotel: 'The Siam', ubicacion: '3/2 Khao Rd, Wachira Phayaban, Dusit District, Bangkok 10300, Tailandia', clasificacion: 5, descripcion: 'Hotel boutique de lujo a orillas del río Bangkok, que ofrece un oasis urbano con diseño art deco.', capacidadPersonas: 3, areaHotel: 30000, tarifaPromedio: 1300, numeroPisos: 3, tamañoHabitaciones: '80 m²', ingresosMensuales: 4500000},
-  {nombreHotel: 'Park Hyatt Kyoto', ubicacion: '360 Kodaiji Maekawa-cho, Higashiyama-ku, Kyoto 605-0825, Japón', clasificacion: 5, descripcion: 'Hotel de lujo en el corazón histórico de Kioto, que fusiona la tradición japonesa con el confort moderno,', capacidadPersonas: 3, areaHotel: 28000, tarifaPromedio: 1600, numeroPisos: 5, tamañoHabitaciones: '55 m²', ingresosMensuales: 5500000},
+  {nombreHotel: 'Park Hyatt Kyoto', ubicacion: '360 Kodaiji Maekawa-cho, Higashiyama-ku, Kyoto 605-0825', clasificacion: 5, descripcion: 'Hotel de lujo en el corazón histórico de Kioto, que fusiona la tradición japonesa con el confort moderno,', capacidadPersonas: 3, areaHotel: 28000, tarifaPromedio: 1600, numeroPisos: 5, tamañoHabitaciones: '55 m²', ingresosMensuales: 5500000},
   {nombreHotel: 'Mount Nelson', ubicacion: '76 Orange St, Gardens, Cape Town, 8001, Sudáfrica', clasificacion: 5, descripcion: 'Hotel histórico de lujo en Ciudad del Cabo, conocido por su elegancia colonial y jardines exuberantes.', capacidadPersonas: 3, areaHotel: 50000, tarifaPromedio: 1100, numeroPisos: 4, tamañoHabitaciones: '50 m²', ingresosMensuales: 4800000},
   {nombreHotel: 'One&Only Mandarina', ubicacion: 'Carretera Federal 200 Km 87, 63729 El Monteón, Nayarit, México', clasificacion: 5, descripcion: 'Resort de lujo en la costa pacífica de México, que ofrece villas privadas y experiencias de aventura exclusivas.', capacidadPersonas: 4, areaHotel: 150000, tarifaPromedio: 2500, numeroPisos: 1, tamañoHabitaciones: '180 m²', ingresosMensuales: 7500000},
   {nombreHotel: 'The Carlyle', ubicacion: '35 E 76th St, New York, NY 10021, Estados Unidos', clasificacion: 5, descripcion: 'Hotel icónico del Upper East Side de Nueva York, conocido por su elegancia atemporal y su famoso bar de jazz.', capacidadPersonas: 3, areaHotel: 35000, tarifaPromedio: 1800, numeroPisos: 35, tamañoHabitaciones: '55 m²', ingresosMensuales: 8500000},
@@ -47,23 +47,22 @@ db.hotel.insertMany([
 
 //Búsquedas
 
-//db.hotel.find({nombreHotel:{$eq:'Capella Bangkok'}})
+db.hotel.find({nombreHotel:{$eq:'Capella Bangkok'}}) //Busca el hotel igual al nombre especificado 
 
-//db.hotel.find({clasificacion:{$gt:5}})
+//db.hotel.find({clasificacion:{$gt:5}}) //Busca los hoteles cuya clasificación sea mayor a 5 estrellas
 
-//db.hotel.find({tarifaPromedio:{$gte:1500}})
+//db.hotel.find({tarifaPromedio:{$gte:1500}}) //Busca los hoteles cuya tarifa promedio sea mayor o igual a 1500 dolares
 
-//db.hotel.find({areaHotel:{$lt:20000}})
+//db.hotel.find({areaHotel:{$lt:20000}}) //Busca los hoteles cuya area total sea menor a 20000 metros cuadrados
 
-//db.hotel.find({capacidadPersonas:{$lte:2}})
+//db.hotel.find({capacidadPersonas:{$lte:2}}) //Busca los hoteles cuya capacidad de personas por habitación sea menor o igual a 2
 
-//db.hotel.find({ubicacion:{$ne:'Whitehall, London SW1A 2EU, Reino Unido'}})
+//db.hotel.find({ubicacion:{$ne:'Whitehall, London SW1A 2EU, Reino Unido'}}) //Busca los hoteles cuta ubicacion sea diferente a la especificada
 
-//db.hotel.find({ingresosMensuales:{$in:[5000000,6000000,7000000]}})
+//db.hotel.find({ingresosMensuales:{$in:[5000000,6000000,7000000]}}) //Busca los hoteles cuyos ingresos mensuales se encuentren entre los 5000000,6000000 0 7000000 dolares
 
-//db.hotel.find({numeroPisos:{$nin:[1,2,3,4,5]}})
+//db.hotel.find({numeroPisos:{$nin:[1,3,5]}}) //Busca los hoteles cuyo número de pisos no se encuentre entre 1,3 o 5
 
-//db.hotel.find({tamañoHabitaciones:'50 m²'})
+//db.hotel.find({tamañoHabitaciones:'50 m²'}) //Busca los hoteles cuyo tamaño de habitaciones sea de 50 metros cuadrados
 
-//db.hotel.deleteOne({nombreHotel:{$eq:'Eden Rock'}})
-
+//db.hotel.deleteOne({nombreHotel:{$eq:'Eden Rock'}}) //Busca el hotel cuyo nombre sea igual a Eden Rock y lo elimina

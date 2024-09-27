@@ -2,7 +2,7 @@
 
 db.shop.insertMany([
   
-  {nombreProducto: 'BOLSO DE PLAYA', descripcion: 'Bolso de Playa Malla,Presentación: x1 UND,Composición: 65% PVC, 35% Poliéster', precio: 19900, categoria: 'Extraordinarios', disponibilidadInventario: 8, marca: 'Red Flag', numeroModelo: 2023, peso: 500, unidadesVendidas: 150, valoracionPromedio: 4.5 },
+  {nombreProducto: 'BOLSO DE PLAYA', descripcion: 'BOLSO DE PLAYA MALLA, PRESENTACIÓN: X1 UND, COMPOSICIÓN: 65% PVC, 35% POLIÉSTER', precio: 19900, categoria: 'Extraordinarios', disponibilidadInventario: 8, marca: 'Red Flag', numeroModelo: 2023, peso: 500, unidadesVendidas: 150, valoracionPromedio: 4.5 },
   {nombreProducto: 'CESTAS ALMACENAMIENTO', descripcion: 'JUEGO DE CESTAS DE ALMACENAMIENTO,Tamaño: L 33.5 X 33.5 X 6.5 cm, M 30 X 15 X 5 cm, S 15 X 15 X 5 cm ', precio: 69990, categoria: 'Extraordinarios', disponibilidadInventario: 4, marca: 'Red Flag', numeroModelo: 2023, peso: 1200, unidadesVendidas: 85, valoracionPromedio: 4.7 },
   {nombreProducto: 'CHAQUETA ACOLCHADA HOMBRE', descripcion: 'Liviana, cómoda, mantiene la temperatura interna. 2 Tallas: S/M M/L Colores: Verde y Azul', precio: 99990, categoria: 'Extraordinarios', disponibilidadInventario: 1, marca: 'Jack in a Bag', numeroModelo: 2023, peso: 800, unidadesVendidas: 60, valoracionPromedio: 4.8 },
   {nombreProducto: 'SOMBRILLA MINI', descripcion: 'SOMBRILLA MINI CON ESTUCHE REDFLAG 1 UD', precio: 27990, categoria: 'Extraordinarios', disponibilidadInventario: 1, marca: 'Red Flag', numeroModelo: 2023, peso: 300, unidadesVendidas: 40, valoracionPromedio: 4.6 },
@@ -46,22 +46,22 @@ db.shop.insertMany([
 
 //Búsquedas
 
-//db.shop.find({nombreProducto:{$eq:'PIZZA'}})
+db.shop.find({nombreProducto:{$eq:'PIZZA'}}) //Busca el producto igual a pizza
 
-//db.shop.find({precio:{$gt:50000}})
+//db.shop.find({precio:{$gt:50000}}) //Busca los productos con un precio mayor a 50000 pesos
 
-//db.shop.find({disponibilidadInventario:{$gte:100}})
+//db.shop.find({disponibilidadInventario:{$gte:100}}) //Busca los productos con una disponibilidad en el inventario mayor o igual a 100
 
-//db.shop.find({numeroModelo:{$lt:'modelo'}})
+//db.shop.find({numeroModelo:{$lt:2024}}) //Busca los productos cuyo número de modelo sea menor al 2024
 
-//db.shop.find({peso:{$lte:300}})
+//db.shop.find({peso:{$lte:300}}) //Busca los productos cuyo peso sea menor o igual a 300gr
 
-//db.shop.find({unidadesVendidas:{$ne:10}})
+//db.shop.find({unidadesVendidas:{$ne:10}}) //Busca los productos cuyas unidades vendidas sean diferentes de 10
 
-//db.shop.find({valoracionPromedio:{$in:['valores']}})
+//db.shop.find({valoracionPromedio:{$in:[4.7,4.8]}}) //Busca los productos cuya vaoracion promedio se encuentre entre 4.7 y 4.8 puntos
 
-//db.shop.find({categoria:{$nin:['Lácteos','Mascotas']}})
+//db.shop.find({categoria:{$nin:['Lácteos','Mascotas']}}) //Busca los productos cuya categoría no sea ni Lácteos ni Mascotas
 
-//db.shop.find({marca:'Red Flag'})
+//db.shop.find({marca:'Red Flag'}) //Busca sólo los productos cuya marca sea Red Flag
 
-//db.shop.updateOne({nombreProducto:'PIZZA'},{$set:{precio:4990}})
+//db.shop.updateOne({nombreProducto:'PIZZA'},{$set:{precio:4990}}) //Realiza la actualización de precio al producto PIZZA, cambiándole el precio actual (4490) a 4990

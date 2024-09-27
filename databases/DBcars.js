@@ -42,13 +42,12 @@ db.cars.insertMany([
   {marca: 'Hyundai', modelo: 'Kona Híbrida', añoFabricacion: 2017, precio: 139990000, consumoCombustible: 5.20, color: 'Gris', capacidadPasajeros: 5, tipoTransmision: 'Automática de 6 velocidades + reversa', potenciaMotor: 139, sistemaSeguridad: 'ABS (Sistema Antibloqueo de Frenos),EBD (Distribución Electrónica de Frenado),ESC (Control Electrónico de Estabilidad ),HAC (Asistente de Ascenso en Pendientes),MCB (Multicollision brake),MDPS (Dirección Electroasistida),TPMS (Monitoreo de Presión de LLantas),Cámara de reversa con guía dinámica,Sensores de parqueo,DMS (Selector de modo de manejo)'},
   {marca: 'Ford', modelo: 'Mustang', añoFabricacion: 1964, precio:  259990000, consumoCombustible: 10.5, color: 'Plata', capacidadPasajeros: 4, tipoTransmision: 'automática de 10 velocidades con capacidad SelectShift', potenciaMotor: 486, sistemaSeguridad: 'Espejo retrovisor sin marco con anti-deslumbramiento,Anclajes inferiores y anclajes de sujeción para niños ISOFIX,Kit de sellador e inflador de neumáticos,Sistema de Seguridad Personal™ para el conductor y pasajero delantero: Pretensores de cinturones de seguridad,Sistema antirrobo activo,Consola central con bloqueo electrónico,Kit de bloqueo de ruedas,etc.'},
   {marca: 'Volkswagen', modelo: 'Jetta Turbo', añoFabricacion: 2018, precio: 112990000, consumoCombustible: 12.20, color: 'Negro', capacidadPasajeros: 5, tipoTransmision: 'Automática Tiptronic 6 velocidades', potenciaMotor: 150, sistemaSeguridad: 'Airbag,Sistema de control electrónico de estabilidad (ESC),Sistema antibloqueo de ruedas (ABS),Sistema de control de tracción (ASR),Sistema de control electrónico de diferencial (EDL),Asistente de arranque en pendiente,Barras estabilizadoras,Activación de las luces direccionales en caso de emergencia,Sistema de asistencia hidráulica de frenado (HBA),etc.'},
-  
   {marca: 'Volkswagen', modelo: 'Jetta Turbo 2', añoFabricacion: 2018, precio: 112990000, consumoCombustible: 12.20, color: 'Negro', capacidadPasajeros: 5, tipoTransmision: 'Automática Tiptronic 6 velocidades', potenciaMotor: 150, sistemaSeguridad: 'Airbag,Sistema de control electrónico de estabilidad (ESC),Sistema antibloqueo de ruedas (ABS),Sistema de control de tracción (ASR),Sistema de control electrónico de diferencial (EDL),Asistente de arranque en pendiente,Barras estabilizadoras,Activación de las luces direccionales en caso de emergencia,Sistema de asistencia hidráulica de frenado (HBA),etc.'}
  
 ]);
 
 //Búsquedas
-//db.cars.find({color:{$eq:'Blanco'}}) //Busca los carros que sólo tengan color Blanco
+db.cars.find({color:{$eq:'Blanco'}}) //Busca los carros que sólo tengan color Blanco
 
 //db.cars.find({añoFabricacion:{$gt:2000}}) //Busca los carros cuyo año de fabricación sea mayor a los 2000
 
@@ -56,7 +55,7 @@ db.cars.insertMany([
 
 //db.cars.find({capacidadPasajeros:{$lt:5}}) //Busca los carros que tengan una capacidad de pasajeros menor a 5
 
-//db.cars.find({potenciaMotor:{$lte:200}}) //Busca los carros que tengan una potencia de motor menor o igual que 200
+//db.cars.find({potenciaMotor:{$lte:100}}) //Busca los carros que tengan una potencia de motor menor o igual que 100
 
 //db.cars.find({marca:{$ne:"Toyota"}}) //Busca los carros que sean diferente de la marca Toyota
 
@@ -67,4 +66,3 @@ db.cars.insertMany([
 //db.cars.find({marca:"Ford", añoFabricacion:{$gte:2020}}) //Busca los carros que sean de la marca Ford y su año de fabricación sea mayor o igual al 2020
 
 //db.cars.deleteOne({modelo:"Jetta Turbo 2"}) //Elimina el carro haciendo uso del modelo
-

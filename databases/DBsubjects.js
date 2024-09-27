@@ -50,18 +50,18 @@ db.subjects.find({nombreMateria:{$eq:'Algoritmos Y Programación III'}}) //Busca
 
 //db.subjects.find({creditos:{$gt:2}}) //Busca las materias que tengan créditos mayores que 2
 
-//db.subjects.find({horasTeoricas:{$gte:3}}) //Busca las materias cuyas horas teóricas sean mayores o iguales que 3
+//db.subjects.find({horasTeoricas:{$gte:30}}) //Busca las materias cuyas horas teóricas sean mayores o iguales que 30
 
-//db.subjects.find({horasPracticas:{$lt:2}) //Busca las materias cuyas horas practicas sean menores a 84052
+//db.subjects.find({horasPracticas:{$lt:40}}) //Busca las materias cuyas horas practicas sean menores a 40
 
 //db.subjects.find({codigoMateria:{$lte:84020}}) //Busca las materias cuyo código sea menor o igual que 84020
 
 //db.subjects.find({profesorResponsable:{$ne:'Leidy Marcela Gómez Melo'}}) //Busca las materias cuyo profesor responsable sea diferente a ella
 
-//db.subjects.find({aulaAsignada}:{$in:[400,600]}) //Busca las aulas cuyo rango sea entre 400 y 600
+//db.subjects.find({aulaAsignada:{$in:['602','603']}}) //Busca las materias cuya aula asignada esté en un rango de 602 y 603
 
-//db.subjects.find({creditos:{$nin:[1,3]}}) //Busca las materias que no tengan ni 1 ni 3 creditos
+//db.subjects.find({creditos:{$nin:[1,3]}}) //Busca las materias que no tengan creditos en un rango de 1 a 3 creditos
 
-//db.subjects.find({profesorResponsable:'José Javier Villalba Romero'}) //Busca las materias cuyo profesor responsable sea el profesor Villalba
+//db.subjects.find({profesorResponsable:'Giovanni Albeiro Hernández Pantoja'}) //Busca las materias cuyo profesor responsable sea el profesor Giovanni Hernández
 
 //db.subjects.deleteOne({nombreMateria:'Lectoescritura Investigativa'}) //Elimina de la base de datos la materia especificada
